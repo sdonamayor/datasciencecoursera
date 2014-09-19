@@ -12,7 +12,7 @@
 # 1. Merge the training and the test sets to create one data set.
 
 	# Set working directory
-	setwd('C:/Documents and Settings/User/Mis documentos/Dropbox/Coursera/Getting and Cleaning Data/Assignment/UCI HAR Dataset');
+	setwd('C:/Documents and Settings/User/Dropbox/Coursera/Getting and Cleaning Data/Assignment/UCI HAR Dataset');
 
 	# Read data from files
 	features = read.table('./features.txt',header=FALSE);
