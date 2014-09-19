@@ -1,0 +1,47 @@
+run_analysis.R script performs the following steps:
+
+1. Sets the working directory.
+
+2. Reads data from files:
+	- features.txt
+	- activity_labels.txt
+	- x_train.txt (from directory 'train')
+	- y_train.txt (from directory 'train')
+	- subject_train.txt (from directory 'train')
+
+3. Assigns column names to the imported data from above.
+
+4. Merges the training data: xTrain, yTrain, subjectTrain
+
+5. Reads data from the files in the test directory:
+	- x_test.txt
+	- y_test.txt
+	- subject_test.txt
+
+6. Assigns column names to the test data from above.
+
+7. Merges the test data: xTest, yTest,subjectTest
+
+8. Merges the training and test data to create a final data set (finalData).
+	
+9. Creates the variable "ColNames" with the column names from the final data set.
+
+10. Selects the columns we need to extract the measurements on the mean and standard deviation (id_mean_sd). 
+
+11. Set those selected columns as the final data set.
+
+12. Merges the final data set with the activity table to include descriptive activity names.
+
+13. Updates the "ColNames" vector with the changes.
+
+14. Cleans the variable names and labels them with descriptive activity names with a loop. 
+
+15. Reassigns the new descriptive column names to the finalData set.
+
+16. Create a new table ith the average of each variable for each activity and each subject (DataSet2).
+
+17. Includes the mean of each variable for each activity and each subject (tidyDataSet2).
+
+18. Merges the tidyDataSet2 with activity to add descriptive activity names.
+
+19. Exports the tidyDataSet2 set as a text file.
